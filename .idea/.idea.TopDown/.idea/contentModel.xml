@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\KamiSama\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\KamiSama\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TopDown.251895112.00" t="ExcludeRecursive" />
+    <e p="D:\GameDev\TopDown\TopDown" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Allegorithmic" t="Include">
+          <e p="Plugins" t="Include">
+            <e p="engine_build_info.txt" t="Include" />
+            <e p="EULA.txt" t="Include" />
+            <e p="Substance.Platform" t="Include">
+              <e p="NativeFunctions.cs" t="Include" />
+              <e p="Substance.Platform.asmdef" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="CustomPlayerController.cs" t="Include" />
+        <e p="MovementPlayer.cs" t="Include" />
+        <e p="Scifi" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="DoorFunctions.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Yurowm" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Actions.cs" t="Include" />
+              <e p="CharacterPanel.cs" t="Include" />
+              <e p="CharacterViewer.cs" t="Include" />
+              <e p="PlayerController.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="SkinShader.shader" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Substance.Platform.csproj" t="IncludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="TopDown.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
