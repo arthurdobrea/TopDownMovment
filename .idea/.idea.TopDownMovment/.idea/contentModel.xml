@@ -16,8 +16,10 @@
             </e>
           </e>
         </e>
+        <e p="CamerSmoothFollow.cs" t="Include" />
         <e p="CustomPlayerController.cs" t="Include" />
         <e p="MovementPlayer.cs" t="Include" />
+        <e p="Rotation.cs" t="Include" />
         <e p="Scifi" t="Include">
           <e p="Scripts" t="Include">
             <e p="DoorFunctions.cs" t="Include" />
