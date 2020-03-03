@@ -11,7 +11,8 @@ public class CustomPlayerController : MonoBehaviour
     public float runSpeed = 3;
     public float moveSpeed = 1.5f;
     private Vector3 finalDirection;
-    private Vector3 input;
+    private Vector3 inputFromMouse;
+    private Vector3 inputFromKeyboard;
     private Vector3 correction;
     private float gravity = -16;
     private Actions actions;
@@ -28,15 +29,20 @@ public class CustomPlayerController : MonoBehaviour
     
     void Update()
     {
-        input = new Vector3(Input.GetAxis("Horizontal"), gravity * Time.deltaTime, Input.GetAxis("Vertical"));
-        finalDirection = input.normalized * finalSpeed;
+        inputFromKeyboard = new Vector3(Input.GetAxis("Horizontal"), gravity * Time.deltaTime, Input.GetAxis("Vertical"));
+        finalDirection = inputFromKeyboard.normalized * finalSpeed;
+
+        transform.Translate(Vector3.forward * finalSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
+        transform.Translate(Vector3.right * finalSpeed * Input.GetAxis("Horizontal") * Time.deltaTime);
+        
+        // characterController.Move(finalDirection * finalSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
     }
     
     void FixedUpdate()
     {
         handleInput();
         rotateTowardsMouseLocalCoordinate();
-        characterController.Move(finalDirection * Time.deltaTime);
+        
     }
     
     private void rotateTowardsMouseLocalCoordinate()
